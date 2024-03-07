@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas
+            cm,mm,in(polegada),px,pt,pc
+            recomendação Oficial- use px ou use em-
+
+             Medidas Relativas
+             em, ex, rem,vw, vh, %
+             16px geralmente é  1em
+             */
+             font-size: 1em ; /* Tamaho da Fonte */
+             font-weight: bolder; /* Negrito */
+             font-style: italic; /* Modelo da Letra */
+             /* lighter normal bold bolder */
+             text-decoration: underline; /* Sublinhado */
+     
+             /* weight(peso), width(Largura), height(altura) */
+
+        }
+
+        h1 {
+
+            /* shorthand font
+            -1 font-style-2 font-weight-3 font-size- 4 font-family.
+
+            font-family: ´work Sans`, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em, 'work Sans', sans-serif;;
+
+        }
+
+        h2 {
+font: bold 2em 'work Sans';
+ }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad doloribus nisi minima ipsa odit, dolore provident, similique eos culpa error illo ut non accusantium unde amet aperiam saepe hic dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel voluptates alias vero quos omnis autem dicta ea officia. Quam autem obcaecati odit impedit alias quos ad id fugiat doloribus quas!</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet. Esse reiciendis eius amet, eos excepturi tempora. Veniam corrupti vero debitis, numquam at nostrum vel, praesentium, dolorem inventore id accusamus.</p>
+    
+</body>
+</html>
