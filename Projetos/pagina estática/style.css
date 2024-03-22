@@ -103,6 +103,18 @@ main #banner .banner-image {
   max-width: 250px;
 }
 
+@media (max-width: 920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+main #banner .banner-content {
+  text-align: center;
+}
+
 /* SECTION POSTS */
 section#posts {
   margin-top: 71px;
@@ -118,14 +130,49 @@ section#posts {
   margin: auto;
 }
 
-#posts .posts-content .posts-content.header {
+#posts .posts-content .posts-content-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
 }
 
-#posts .posts-content .posts-content.header .section-title .view-all-link {
+#posts .posts-content .posts-content-header .section-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#posts .posts-content .posts-content-header .view-all-link {
   text-decoration: none;
-  color: #00abcc;
+  color: #00cccc;
+}
+
+#posts .posts-content .card1 {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+#posts .posts-content .card2 {
+  background-color: white;
+  padding: 24px;
+}
+
+#posts .posts-content .card2 h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+
+#posts .posts-content .card2 span {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  display: block;
+}
+
+@media (max-width: 740px) {
+  #posts .posts-content .card1 {
+    flex-direction: column;
+  }
 }
