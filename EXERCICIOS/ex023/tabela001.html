@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table {
+        width: 400px;
+        height: 400px;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align:left; /*  Alinhamento horizontal */
+        vertical-align: middle; /*Alinhamento Vertical */
+      }
+
+      .cor01 {
+        background-color: blue;
+        vertical-align: top;
+        
+      }
+
+      .cor02 {
+        background-color: green;
+        text-align: right;
+      }
+
+      .cor03 {
+        background-color: yellow;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Minha primeira tabela</h1>
+
+    <table>
+      <tr>
+        <td class="cor01">A1</td>
+        <td class="cor02">B1</td>
+        <td class="cor03">C1</td>
+      </tr>
+      <tr class="linha">
+        <td class="cor03">A2</td>
+        <td class="cor01">B2</td>
+        <td class="cor02">C2</td>
+      </tr>
+      <tr>
+        <td class="cor03">A3</td>
+        <td class="cor01">B3</td>
+        <td class="cor02" >C3</td>
+      </tr>
+      <td class="cor02">A4</td>
+      <td class="cor03">B4</td>
+      <td class="cor01">C4</td>
+     
+      </tr>
+    </table>
+  </body>
+</html>
